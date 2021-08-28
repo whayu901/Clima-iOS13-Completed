@@ -57,7 +57,7 @@ struct WeatherManager {
             
             let weather = WeatherModel(conditionId: id, cityName: name, temperature: temp)
             return weather
-            
+    
         } catch {
             delegate?.didFailWithError(error: error)
             return nil
